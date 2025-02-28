@@ -102,9 +102,9 @@ const AddSong = () => {
 
         <div className='flex flex-col gap-2'>
           <p>Album</p>
-          <select onChange={(e)=>setAlbum(e.target.value)} defaultValue={album} className='bg-tranparent outline-green-600 border-2 border-gray-400 p-2.5 w-[150px]'>
+          <select onChange={(e)=>setAlbum(e.target.value)} defaultValue={album} className='bg-transparent outline-green-600 border-2 border-gray-400 p-2.5 w-[150px]'>
             <option value="none">None</option>
-            {albumData.map((item,index)=>(<option key={index} value={item.name}>{item.name}</option>))}
+            {albumData?.map((item,index)=>(<option key={index} value={item.name}>{item.name}</option>))}
           </select>
         </div>
   
